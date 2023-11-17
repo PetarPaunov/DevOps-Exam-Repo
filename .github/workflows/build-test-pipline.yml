@@ -1,4 +1,4 @@
-name:  CI
+name:  CI and CD
 
 on:
   push:
@@ -23,9 +23,9 @@ jobs:
     - name: Start tests
       run: npm test
   depoly:
-    
+    needs: build
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
