@@ -18,7 +18,9 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    - name: Install the app
+    - name: Install app
       run: npm install
+    - name: Start app
+      run: npm start
     - name: Start tests
       run: npm test
