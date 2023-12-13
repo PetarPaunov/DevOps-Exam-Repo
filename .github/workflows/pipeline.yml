@@ -23,4 +23,4 @@ jobs:
     - name: Star the application
       run: npm start
     - name: Run unit Tests
-    - run: npm run test:unit
+      run: npm run test:unit
