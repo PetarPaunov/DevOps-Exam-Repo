@@ -22,3 +22,5 @@ jobs:
       run: npm install
     - name: Run unit Tests
       run: npm run test:unit
+    - name: Dispay SoftUni Username
+      run: echo "UserName"
